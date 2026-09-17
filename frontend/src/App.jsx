@@ -30,7 +30,7 @@ import "./index.css";
 import "./premium-ui.css";
 import "./topnav.css";
 
-const API = "http://localhost:8080/api/costs";
+const API = `${import.meta.env.VITE_API_URL}/api/costs`;
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(

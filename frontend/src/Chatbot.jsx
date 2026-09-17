@@ -3,7 +3,7 @@ import "./chatbot.css";
 
 const AI_API =
   import.meta.env.VITE_AI_API_URL ||
-  "http://localhost:8080/api/ai";
+  `${import.meta.env.VITE_API_URL}/api/ai`
 
 const WELCOME_MESSAGE = {
   role: "assistant",

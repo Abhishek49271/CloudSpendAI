@@ -14,8 +14,7 @@ import {
   Legend,
 } from "recharts";
 
-const API = "http://localhost:8080/api/costs";
-
+const API = `${import.meta.env.VITE_API_URL}/api/costs`;
 const COLORS = [
   "#6366f1",
   "#8b5cf6",

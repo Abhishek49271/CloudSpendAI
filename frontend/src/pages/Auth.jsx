@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/auth.css";
 
-const API = "http://localhost:8080/api/auth";
+const API = `${import.meta.env.VITE_API_URL}/api/auth`;
 
 export default function Auth({ initialMode = "login", onLogin, onSignUp }) {
   const [mode, setMode] = useState(initialMode);

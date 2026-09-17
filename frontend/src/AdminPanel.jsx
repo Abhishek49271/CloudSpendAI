@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import "./styles/admin.css";
 
-const API = "http://localhost:8080/api/costs";
+const API = `${import.meta.env.VITE_API_URL}/api/costs`;
 
 function AdminPanel({ records = [], onRefresh }) {
   const today = new Date().toISOString().split("T")[0];

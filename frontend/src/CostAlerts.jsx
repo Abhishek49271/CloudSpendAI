@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-const API = "http://localhost:8080/api/costs";
+const API = `${import.meta.env.VITE_API_URL}/api/costs`;
 
 function formatCurrency(value) {
   return new Intl.NumberFormat("en-US", {
